@@ -1,0 +1,42 @@
+header nav a{
+    display: inline-block;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+}
+
+li:nth-child(2){
+    background-color: yellow;
+}
+li:first-child{
+    background-color: blue;
+    color: white;
+}
+li:last-child{
+    background-color: orange;
+}
+
+h2{
+    background-color: blueviolet;
+    transition: all 3s;
+}
+h2.active{
+    background-color: yellow;
+}
+h2.xl-text{
+    font-size: 42px;
+}
+h2.text-center{
+    text-align: center;
+}
+.replace-me{
+    border-radius: 40px;
+}
+h2.decoration{
+    border:4px solid black;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+h2.non-active{
+    display: none;
+}
