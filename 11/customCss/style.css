@@ -1,0 +1,15 @@
+:root{
+    --bg-color:red;
+    --text-color:white;
+    --title-color:yellow;
+}
+
+section{
+    background-color: var(--bg-color);
+}
+p{
+    color: var(--text-color);
+}
+h1{
+    color: var(--title-color);
+}
