@@ -1,0 +1,17 @@
+<users>
+    <user>
+        <name>Tom</name>
+        <email>tom@emai.com</email>
+        <text>Lorem ipsum dolor sit amet.</text>
+    </user>
+    <user>
+        <name>Tom2</name>
+        <email>tom@emai.com</email>
+        <text>Lorem ipsum dolor sit amet.</text>
+    </user>
+    <user>
+        <name>Tom3</name>
+        <email>tom@emai.com</email>
+        <text>Lorem ipsum dolor sit amet.</text>
+    </user>
+</users>
