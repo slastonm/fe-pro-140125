@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        CommonJS (require) and ES6 (import/export) are two different ways to include external modules in your code.
+    </h3>
+    <h4>
+        CommonJS (require)
+    </h4>
+    <p>
+        const myModule = require('./myModule');
+    </p>
+    <h3>
+        ES Modules (import)
+    </h3>
+    <p>
+        import вимагає, щоб файл мав розширення .mjs або щоб у package.json було вказано "type": "module"
+    </p>
+    <p>
+        import myModule from './myModule.js';
+         або import { myFunction } from './myModule.js
+    </p>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
