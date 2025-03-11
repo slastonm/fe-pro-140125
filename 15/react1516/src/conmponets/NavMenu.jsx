@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router';
 const NavMenu = (props) => {
     let isLogin = true;
     let noLogin = <div className='ms-auto'>
@@ -35,7 +35,11 @@ const NavMenu = (props) => {
                         <a className="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
                         <a className="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
                         <a className="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a> */}
-                        {linkElements}
+                        {/* {linkElements} */}
+                        <Link to='/' className="me-3 py-2 link-body-emphasis text-decoration-none">Home</Link>
+                        <Link to='/about' className="me-3 py-2 link-body-emphasis text-decoration-none">About</Link>
+                        <Link to='/info' className="me-3 py-2 link-body-emphasis text-decoration-none">Info</Link>
+
                     </nav>
         );        
     }

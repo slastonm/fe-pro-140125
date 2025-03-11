@@ -9,8 +9,10 @@ const MyButton = () => {
         padding:'30px',
         margin:'50px'
     }
+    let count = 0;
     const callAlert = ()=>{
         alert('!!!Hello!!!!')
+        count++
     }
     const helloUser = (userName)=>{
         alert(`Hello user: ${userName}`)
@@ -21,7 +23,7 @@ const MyButton = () => {
     return (
         <div>
             <button onClick={callAlert} style={inlineStyel}>
-                Inline style call alert
+                Inline style call alert {count}
             </button>
             <button onClick={()=>helloUser('John')} className={`btn-lg btn btn-primary`}>
                 Test

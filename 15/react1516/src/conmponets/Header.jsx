@@ -19,7 +19,8 @@ const Header = () => {
                 </div>
                 <TextBlock title='About' content='lorem ipsum'></TextBlock>
                 <TextBlock title={titleValue} content={contentValue}></TextBlock>
-                {/* <TextBlock></TextBlock> */}
+                <TextBlock></TextBlock>
+                <TextBlock title="" content="" />
         </header>
 
     );

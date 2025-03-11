@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,26 +7,53 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'
 import Header from "./conmponets/Header"
 import Footer from "./conmponets/footer"
 import MyButton from './conmponets/customButton/MyButton'
-
+import Counter from './conmponets/Counter'
+import ProductList from './conmponets/ProductList'
+import UseEffectComponent from './conmponets/UseEfect'
+import UseRefComponent from './conmponets/UseRefComponent'
+import SliderComponent from './conmponets/SliderComponent'
+import { BrowserRouter as Router, Route, Routes } from 'react-router'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import InfoPage from './pages/InfoPage'
 function App() {
   // const [count, setCount] = useState(0)
   const imgAltText = 'logo example';
+  const [showCounter, setShowCounter] = useState(false)
   return (
     <>
     <div className='container py-3'>
-      <Header></Header>
-      <h1 className='text-center'>
-        <img src={viteLogo} alt="logo" />
+      <Router>
+        <Header></Header>
+        <Routes>
+          <Route path='/' element={<HomePage></HomePage>}></Route>
+          <Route path='/about' element={<AboutPage></AboutPage>}></Route>
+          <Route path='/info' element={<InfoPage></InfoPage>}></Route>          
+        </Routes>
 
-        Hello React 
-        <img src={reactLogo} alt={imgAltText} />
-      </h1>
-      <MyButton></MyButton>
-      <hr />
-      <button className='custom'>
-        No module css
-      </button>
-      <Footer></Footer>
+
+        {/* <h1 className='text-center'>
+          <img src={viteLogo} alt="logo" />
+
+          Hello React 
+          <img src={reactLogo} alt={imgAltText} />
+        </h1>
+        <SliderComponent></SliderComponent> */}
+        {/* <Counter></Counter>
+        <MyButton></MyButton> */}
+        {/* <ProductList></ProductList> */}
+        {/* <UseRefComponent></UseRefComponent>
+        <button onClick={()=>setShowCounter(!showCounter)} className="btn btn-danger">
+          Show hide useEfect
+        </button>
+        {showCounter && <UseEffectComponent></UseEffectComponent>}
+        <hr />
+        <button className='custom'>
+          No module css
+        </button> */}
+        <Footer></Footer>        
+      </Router>
+
     </div>
 
       {/* <div>
